@@ -3,6 +3,7 @@
   InitAddSwords();
   InitAddStructures();
   InitAddItems();
+  InitKnife()
 
 
 // #define Add

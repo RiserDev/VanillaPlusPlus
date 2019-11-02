@@ -1,3 +1,3 @@
-# Vanilla_plus
+# Vanilla++
 
 Mod for Forager
