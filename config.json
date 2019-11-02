@@ -1,0 +1,7 @@
+{
+  "onlineFriendly": false,
+  "name": "Vanilla++",
+  "author": "tehrelt, nightcrawler2D",
+  "targetAPIVersion": "0.0.8",
+  "dependencies": []
+}
