@@ -1,5 +1,6 @@
 #define InitAddItems
   #region Items
-  globalvar = ItemDiamand, ItemEmerald;
+    globalvar = ItemDiamand, ItemEmerald;
+    
 
   #endregion

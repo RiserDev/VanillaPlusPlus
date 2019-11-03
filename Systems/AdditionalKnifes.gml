@@ -1,7 +1,7 @@
 #define InitKnife
   // Items
   globalvar = ItemSlimeKnife, ItemGoldKnife, ItemSkullKnife, ItemCrystalKnife, ItemObsidianKnife, ItemHellfireKnife, ItemVoidKnife, ItemCosmicKnife;
-    #region Knifes
+  #region Knifes
 
     // EXAMPLE // 
     //  ItemNameKnife = KnifeCreate(
@@ -23,7 +23,7 @@
       500,
       [
         Item.Slime, 10, 
-        Item.Iron, 5
+        Item.Wood, 5
       ],
       3
     );

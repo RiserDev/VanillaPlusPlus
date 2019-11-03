@@ -1,22 +1,22 @@
 #define InitAddStructures
   #region Structures
-    globalvar = StructureAdditionalSwordForge;
-    StructureAdditionalSwordForge = StructureCreate(
+    globalvar = StructureAdditionalForge;
+    StructureAdditionalForge = StructureCreate(
       undefined,
-      "sword forge",
-      "additional swords!",
+      "additional forge",
+      "more swords, more knifes!",
       StructureType.Base,
       sprForge
       undefined,
-      [ItemEmerald, 10, Item.Steel, 5, Item],
+      [Item.Brick, 10, Item.Iron, 5, Item.Wood, 5],
       1,
       true,
       [
-        //Items
+        ItemSlimeKnife
       ],
       true,
       BuildMenuCategory.Magical,
-      [GearAddSwords]
-      );
+      [GearAddKnife, GearAddSword]
+    );
       
-    #endregion
+  #endregion
