@@ -1,19 +1,21 @@
 #define InitKnife
   // Items
-  globalvar = ItemSlimeKnife, ItemGoldKnife, ItemSkullKnife, ItemObsidianKnife, ItemHellfireKnife, ItemVoidKnife, ItemCosmicKnife;
+  globalvar = ItemSlimeKnife, ItemGoldKnife, ItemSkullKnife, ItemCrystalKnife, ItemObsidianKnife, ItemHellfireKnife, ItemVoidKnife, ItemCosmicKnife;
+    #region Knifes
 
-  //  ItemNameKnife = KnifeCreate(
-  //   "Name Knife",
-  //   "description",
-  //   "spr+here+.png",
-  //   value,
-  //   [
-  //     Item.Slime, 50, 
-  //     Item.Iron, 5
-  //   ],
-  //   damage
-  // );
-  #region Knifes
+    // EXAMPLE // 
+    //  ItemNameKnife = KnifeCreate(
+    //   "Name Knife",
+    //   "description",
+    //   "spr.png",
+    //   value,
+    //   [
+    //     Recipe
+    //   ],
+    //   damage
+    // );
+    // EXAMPLE //
+
     ItemSlimeKnife = KnifeCreate(
       "Slime Knife",
       "slimy",
@@ -41,7 +43,7 @@
     ItemSkullKnife = KnifeCreate(
       "Skull Knife",
       "",
-      "spr+here+.png",
+      "sprSkullKnife.png",
       1500,
       [
 
@@ -49,9 +51,21 @@
       18
     );
 
+    ItemCrystalKnife = KnifeCreate (
+      "Crystal Knife",
+      "",
+      "sprCrystalKnife.png",
+      1750,
+      [
+
+      ],
+      24
+    );
+
     ItemObsidianKnife = KnifeCreate(
       "Obsidian Knife",
       "",
+      "spr.png",
       2000,
       [
 
@@ -62,6 +76,7 @@
     ItemHellfireKnife = KnifeCreate(
       "HellFire",
       "",
+      "sprHellFireKnife.png",
       2500,
       [
 
@@ -72,6 +87,7 @@
     ItemVoidKnife = KnifeCreate(
       "Void Knife",
       "",
+      "spr.png",
       3000,
       [
 
@@ -82,6 +98,7 @@
     ItemCosmicKnife = KnifeCreate(
       "Comic Knife",
       "",
+      "spr.png",
       3500,
       [
 
