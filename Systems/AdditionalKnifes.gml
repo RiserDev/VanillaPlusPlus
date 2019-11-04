@@ -1,19 +1,19 @@
 #define InitKnife
   // Items
-  globalvar = ItemSlimeKnife, ItemGoldKnife, ItemSkullKnife, ItemCrystalKnife, ItemObsidianKnife, ItemHellfireKnife, ItemVoidKnife, ItemCosmicKnife;
+  globalvar ItemSlimeKnife, ItemGoldKnife, ItemSkullKnife, ItemCrystalKnife, ItemObsidianKnife, ItemHellfireKnife, ItemVoidKnife, ItemCosmicKnife;
   #region Knifes
 
     // EXAMPLE // 
-    //  ItemNameKnife = KnifeCreate(
-    //   "Name Knife",
-    //   "description",
-    //   "spr.png",
-    //   value,
-    //   [
-    //     Recipe
-    //   ],
-    //   damage
-    // );
+      //  ItemNameKnife = KnifeCreate(
+      //   "Name Knife",
+      //   "description",
+      //   "spr.png",
+      //   value,
+      //   [
+      //     Recipe
+      //   ],
+      //   damage
+      // );
     // EXAMPLE //
 
     ItemSlimeKnife = KnifeCreate(
@@ -98,7 +98,7 @@
     ItemCosmicKnife = KnifeCreate(
       "Comic Knife",
       "",
-      "spr.png",
+      "sprCosmicKnife.png",
       3500,
       [
 

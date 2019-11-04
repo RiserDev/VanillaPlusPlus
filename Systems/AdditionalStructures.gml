@@ -1,6 +1,6 @@
 #define InitAddStructures
   #region Structures
-    globalvar = StructureAdditionalForge;
+    globalvar StructureAdditionalForge;
     StructureAdditionalForge = StructureCreate(
       undefined,
       "additional forge",

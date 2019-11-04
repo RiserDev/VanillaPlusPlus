@@ -1,5 +1,5 @@
 #define InitAddSwords
-  globalvar = ItemDiamondSword, ItemEmeraldSword;
+  globalvar ItemDiamondSword, ItemEmeraldSword;
 
   #region Sword
   ItemDiamondSword = SwordCreate(
