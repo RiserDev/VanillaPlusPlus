@@ -1,6 +1,31 @@
 #define InitAddSwords
-  globalvar = Item;
+  globalvar = ItemDiamondSword, ItemEmeraldSword;
 
+  #region Sword
+  ItemDiamondSword = SwordCreate(
+    "Diamand Sword",
+    "shinyyyyy",
+    "spr.png",
+    5000,
+    [ //recipe
+      ItemDiamond, 20,
+      Item.Lavanda, 40,
+      Item.Crystal, 20
+    ],
+    45
+  );
+  ItemEmeraldSword = SwordCreate(
+    "Emerald Sword",
+    "too more shinyyyyy",
+    "spr.png",
+    6500,
+    [//recipe
+      ItemEmerald, 20,
+      Item.Steel, 10,
+      Item.Crystal, 20
+    ]
+  );
+  #endregion
 
 #define SwordCreate(name, description, spriteFileName, value, recipe, damage)
   var _sprite = sprite_add("Resources/" + spriteFileName, 1, false, false, 0, 0);

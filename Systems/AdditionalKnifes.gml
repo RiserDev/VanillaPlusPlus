@@ -87,7 +87,7 @@
     ItemVoidKnife = KnifeCreate(
       "Void Knife",
       "",
-      "spr.png",
+      "sprVoidKnife.png",
       3000,
       [
 

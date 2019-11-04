@@ -12,7 +12,7 @@
       1,
       true,
       [
-        ItemSlimeKnife
+        ItemSlimeKnife, ItemDiamondSword
       ],
       true,
       BuildMenuCategory.Magical,
