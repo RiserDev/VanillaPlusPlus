@@ -1,8 +1,11 @@
 #define InitKnife
   // Items
   globalvar ItemSlimeKnife, ItemGoldKnife, ItemSkullKnife, ItemCrystalKnife, ItemObsidianKnife, ItemHellfireKnife, ItemVoidKnife, ItemCosmicKnife;
+  globalvar GearAddKnife;
+  
+  //Gear
+  GearAddKnife = GearCategoryCreate(undefined, "Knifes", true);
   #region Knifes
-
     // EXAMPLE // 
       //  ItemNameKnife = KnifeCreate(
       //   "Name Knife",
@@ -15,7 +18,6 @@
       //   damage
       // );
     // EXAMPLE //
-
     ItemSlimeKnife = KnifeCreate(
       "Slime Knife",
       "slimy",
@@ -27,7 +29,6 @@
       ],
       3
     );
-
     ItemGoldKnife = KnifeCreate(
       "Gold Knife",
       "",
@@ -39,7 +40,6 @@
       ],
       9
     );
-
     ItemSkullKnife = KnifeCreate(
       "Skull Knife",
       "",
@@ -50,7 +50,6 @@
       ],
       18
     );
-
     ItemCrystalKnife = KnifeCreate (
       "Crystal Knife",
       "",
@@ -61,7 +60,6 @@
       ],
       24
     );
-
     ItemObsidianKnife = KnifeCreate(
       "Obsidian Knife",
       "",
@@ -72,7 +70,6 @@
       ],
       27
     );
-
     ItemHellfireKnife = KnifeCreate(
       "HellFire",
       "",
@@ -83,7 +80,6 @@
       ],
       36
     );
-
     ItemVoidKnife = KnifeCreate(
       "Void Knife",
       "",
@@ -94,7 +90,6 @@
       ],
       45
     );
-
     ItemCosmicKnife = KnifeCreate(
       "Comic Knife",
       "",
@@ -104,8 +99,7 @@
 
       ],
       54
-    );
-    
+    ); 
   #endregion
 #define KnifeCreate(name, description, spriteFileName, value, recipe, damage)
   var _sprite = sprite_add("Resources/" + spriteFileName, 1, false, false, 0, 0);
