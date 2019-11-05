@@ -19,7 +19,7 @@
     ItemSlimeKnife = KnifeCreate(
       "Slime Knife",
       "slimy",
-      "spr+here+.png",
+      "sprSlimeKnife.png",
       500,
       [
         Item.Slime, 10, 
@@ -31,7 +31,7 @@
     ItemGoldKnife = KnifeCreate(
       "Gold Knife",
       "",
-      "spr+here+.png",
+      "sprGoldKnife.png",
       1000,
       [
         Item.Gold, 10,
@@ -65,7 +65,7 @@
     ItemObsidianKnife = KnifeCreate(
       "Obsidian Knife",
       "",
-      "spr.png",
+      "sprObsidianKnife.png",
       2000,
       [
 
