@@ -76,9 +76,12 @@
       "sprHellFireKnife.png",
       2500,
       [
-
+        ItemFireSouls, 20,
+        ItemFireStone, 20,       
+        Item.Nightshade, 10,     
+        Item.Cinderbloom, 25
       ],
-      36
+      46
     );
     ItemVoidKnife = KnifeCreate(
       "Void Knife",
@@ -88,7 +91,7 @@
       [
 
       ],
-      45
+      72
     );
     ItemCosmicKnife = KnifeCreate(
       "Comic Knife",
@@ -98,7 +101,8 @@
       [
 
       ],
-      54
+      100
+
     ); 
   #endregion
 #define KnifeCreate(name, description, spriteFileName, value, recipe, damage)
