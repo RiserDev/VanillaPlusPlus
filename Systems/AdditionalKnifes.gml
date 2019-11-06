@@ -8,14 +8,14 @@
   #region Knifes
     // EXAMPLE // 
       //  ItemNameKnife = KnifeCreate(
-      //   "Name Knife",
-      //   "description",
-      //   "spr.png",
-      //   value,
-      //   [
-      //     Recipe
-      //   ],
-      //   damage
+      //   "Name Knife",              // мюгбюмхе
+      //   "description",             // нохяюмхе
+      //   "spr.png",                 // рейярспйю
+      //   value,                     // жемю
+      //   [                          // пежеор
+      //     Recipe                   // пежеор
+      //   ],                         // пежеор
+      //   damage                     // спнм
       // );
     // EXAMPLE //
     ItemSlimeKnife = KnifeCreate(

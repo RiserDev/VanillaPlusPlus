@@ -3,8 +3,4 @@
   InitAddSwords();
   InitAddStructures();
   InitAddItems();
-  InitKnife()
-
-
-// #define Add
-//    Build
+  InitKnife();

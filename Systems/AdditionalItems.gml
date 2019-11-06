@@ -1,5 +1,5 @@
 #define InitAddItems
-  globalvar ItemDiamond, ItemEmerald, ItemFireSouls;
+  globalvar ItemDiamond, ItemEmerald, ItemFireSoul, ItemFireStone;
 
   #region Items 
 
@@ -21,14 +21,22 @@
       ItemSubType.None,
       1600
     ); 
-    ItemFireSouls = ItemCreate(
+    ItemFireSoul = ItemCreate(
       undefined,
-      "Fire soul",
+      "Fire Soul",
       "",
-      sprite_add("Resources/sprFireSouls.png", 1, false, false, 8, 8),
+      sprite_add("Resources/sprFireSoul.png", 1, false, false, 8, 8),
       ItemType.Material,
       ItemSubType.None,
       1000
     );
-
+    ItemFireStone = ItemCreate(
+      undefined,
+      "Fire Stone",
+      "",
+      sprite_add("Resources/sprFireStone.png", 1, false, false, 8, 8),
+      ItemType.Material,
+      ItemSubType.None,
+      1000
+    );
   #endregion
