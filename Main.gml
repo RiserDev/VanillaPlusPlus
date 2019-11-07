@@ -29,3 +29,10 @@
     }
     ds_grid_destroy(_snapshotGrid);
   }
+  if (ZoneCurrent() == ZoneRiver) {
+    var _snapshotGrid = ResourceSnapshot();
+    repeat (100) {
+        ResourceSpawn(_snapshotGrid);
+    }
+    ds_grid_destroy(_snapshotGrid);
+  }
