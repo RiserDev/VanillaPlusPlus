@@ -1,21 +1,21 @@
 #define InitKnife
-  // Items
-  globalvar ItemSlimeKnife, ItemGoldKnife, ItemSkullKnife, ItemCrystalKnife, ItemObsidianKnife, ItemHellfireKnife, ItemVoidKnife, ItemCosmicKnife;
-  globalvar GearAddKnife;
-  
+  #region VARS
+    globalvar ItemSlimeKnife, ItemGoldKnife, ItemSkullKnife, ItemCrystalKnife, ItemObsidianKnife, ItemHellfireKnife, ItemVoidKnife, ItemCosmicKnife;
+    globalvar GearAddKnife;
+  #endregion
   //Gear
-  GearAddKnife = GearCategoryCreate(undefined, "Knifes", true);
+  GearAddKnife = GearCategoryCreate(undefined, "Knifes", true, true);
   #region Knifes
     // EXAMPLE // 
       //  ItemNameKnife = KnifeCreate(
-      //   "Name Knife",              // Õ¿«¬¿Õ»≈
-      //   "description",             // Œœ»—¿Õ»≈
-      //   "spr.png",                 // “≈ —“”– ¿
-      //   value,                     // ÷≈Õ¿
-      //   [                          // –≈÷≈œ“
-      //     Recipe                   // –≈÷≈œ“
-      //   ],                         // –≈÷≈œ“
-      //   damage                     // ”–ŒÕ
+      //   "Name Knife",              // –ù–∞–∑–≤–∞–Ω–∏–µ
+      //   "description",             // –û–ø–∏—Å–∞–Ω–∏–µ
+      //   "spr.png",                 // –¢–µ–∫—Å—Ç—É—Ä–∞
+      //   value,                     // –¶–µ–Ω–∞
+      //   [                          // –†–ï–¶–ï–ü–¢
+      //     Recipe                   // –†–ï–¶–ï–ü–¢
+      //   ],                         // –†–ï–¶–ï–ü–¢
+      //   damage                     // –£—Ä–æ–Ω
       // );
     // EXAMPLE //
     ItemSlimeKnife = KnifeCreate(
@@ -76,8 +76,8 @@
       "sprHellFireKnife.png",
       2500,
       [
-        ItemFireSouls, 20,
-        ItemFireStone, 20,       
+        ItemHellSouls, 20,
+        ItemHellStone, 20,       
         Item.Nightshade, 10,     
         Item.Cinderbloom, 25
       ],
@@ -131,4 +131,4 @@
 
 
 #define UseKnife 
-  Trace("Knife!")
+  var _knife = knifeSpawn(objPlayer.x, objPlayer.y, item);

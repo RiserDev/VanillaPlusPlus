@@ -1,13 +1,17 @@
 #define InitAddSwords
-  globalvar ItemDiamondSword, ItemEmeraldSword;
-  globalvar GearAddSword;
-
-  //Gear
-  GearAddSword = GearCategoryCreate(undefined, "Additional Swords", true);
+  // Swords
+    globalvar ItemDiamondSword, ItemEmeraldSword;
+    // Excalibur
+      globalvar ItemBrokenExcalibur, ItemExcalibur;
+  // Gear Categories
+    globalvar GearAddSword, GearAddExcalibur;               
   
+  //Gear
+  GearAddSword = GearCategoryCreate(undefined, "Additional Swords", true, true);
+  GearAddExcalibur = GearCategoryCreate (undefined, "EXCALIBUR", true, true);
   #region Sword
     ItemDiamondSword = SwordCreate(
-      "Diamand Sword",
+      "diamand sword",
       "shinyyyyy",
       "spr.png",
       5000,
@@ -19,7 +23,7 @@
       45
     );
     ItemEmeraldSword = SwordCreate(
-      "Emerald Sword",
+      "emerald sword",
       "too more shinyyyyy",
       "spr.png",
       6500,
@@ -29,6 +33,40 @@
         Item.Crystal, 20
       ]
     );
+    #region Excalibur
+      ItemBrokenExcalibur = ItemCreate(
+        undefined,
+        Localize("broken excalibur"),
+        Localize("legendary sword of king arthur"),
+        sprite_add("Resources/sprBrockenExcalibur.png"),
+        ItemType.Gear
+        ItemSubType.None,
+        10000,
+        0,
+        0,
+        [],
+        ScriptWrap(UseBrokenExcalibur),
+        undefined,
+        true,
+        0
+      );
+      ItemExcalibur = ItemCreate(
+        undefined,
+        Localize("excalibur"),
+        Localize("legendary sword of king arthur, verifed"),
+        sprite_add("Resources/sprExcalibur.png"),
+        ItemType.Gear
+        ItemSubType.None,
+        10000,
+        0,
+        0,
+        [],
+        ScriptWrap(UseExcalibur),
+        undefined,
+        true,
+        1000
+      );
+    #endregion
   #endregion
 #define SwordCreate(name, description, spriteFileName, value, recipe, damage)
   var _sprite = sprite_add("Resources/" + spriteFileName, 1, false, false, 0, 0);
@@ -51,3 +89,7 @@
   );
   GearCategoryAddItems(GearAddSword, _sword);
   return _sword;
+#define UseBrokenExcalibur
+  // Скрипт...
+#define UseExcalibur
+  // Скрипт...

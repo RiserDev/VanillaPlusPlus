@@ -1,6 +1,7 @@
 #define InitAddStructures
   #region Structures
     globalvar StructureAdditionalForge;
+    globalvar StructureMythWorldPortal;
     StructureAdditionalForge = StructureCreate(
       undefined,
       "additional forge",
@@ -18,5 +19,4 @@
       BuildMenuCategory.Magical,
       [GearAddKnife, GearAddSword]
     );
-      
   #endregion
