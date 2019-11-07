@@ -19,8 +19,8 @@
       // );
     // EXAMPLE //
     ItemSlimeKnife = KnifeCreate(
-      "Slime Knife",
-      "slimy",
+      "slime knife",
+      "I wonder what taste is slime?",
       "sprSlimeKnife.png",
       500,
       [
@@ -30,8 +30,8 @@
       3
     );
     ItemGoldKnife = KnifeCreate(
-      "Gold Knife",
-      "",
+      "gold knife",
+      "with him would go to the bank",
       "sprGoldKnife.png",
       1000,
       [
@@ -41,8 +41,8 @@
       9
     );
     ItemSkullKnife = KnifeCreate(
-      "Skull Knife",
-      "",
+      "skull knife",
+      "bones live long",
       "sprSkullKnife.png",
       1500,
       [
@@ -51,8 +51,8 @@
       18
     );
     ItemCrystalKnife = KnifeCreate (
-      "Crystal Knife",
-      "",
+      "crystal knife",
+      "how does he shine",
       "sprCrystalKnife.png",
       1750,
       [
@@ -61,8 +61,8 @@
       24
     );
     ItemObsidianKnife = KnifeCreate(
-      "Obsidian Knife",
-      "",
+      "obsidian knife",
+      "try to break it",
       "sprObsidianKnife.png",
       2000,
       [
@@ -71,8 +71,8 @@
       27
     );
     ItemHellfireKnife = KnifeCreate(
-      "HellFire",
-      "",
+      "hellfire",
+      "with his help you can cook kebab",
       "sprHellFireKnife.png",
       2500,
       [
@@ -84,8 +84,8 @@
       46
     );
     ItemVoidKnife = KnifeCreate(
-      "Void Knife",
-      "",
+      "void knife",
+      "as empty as your soul",
       "sprVoidKnife.png",
       3000,
       [
@@ -94,8 +94,8 @@
       72
     );
     ItemCosmicKnife = KnifeCreate(
-      "Comic Knife",
-      "",
+      "cosmic knife",
+      "protects you from space raiders",
       "sprCosmicKnife.png",
       3500,
       [

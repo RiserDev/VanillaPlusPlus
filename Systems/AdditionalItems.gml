@@ -14,7 +14,7 @@
     #region Material
       ItemDiamond = ItemCreate(
         undefined,
-        "Diamond",
+        "diamond",
         "shiny boi",
         sprite_add("Resources/sprDiamond.png", 1, false, false, 8, 8),
         ItemType.Material,
@@ -23,8 +23,8 @@
       ); 
       ItemEmerald = ItemCreate(
         undefined,
-        "Emerald",
-        "",
+        "emerald",
+        "give them to the resident",
         sprite_add("Resources/sprEmerald.png", 1, false, false, 8, 8),
         ItemType.Material,
         ItemSubType.None,
@@ -34,8 +34,8 @@
     #region Hell items
       ItemHellSoul = ItemCreate(
         undefined,
-        "Hell Soul",
-        "",
+        "hell soul",
+        "hot little thing",
         sprite_add("Resources/sprHellSoul.png", 1, false, false, 8, 8),
         ItemType.Material,
         ItemSubType.None,
@@ -43,8 +43,8 @@
       );
       ItemHellStone = ItemCreate(
         undefined,
-        "Hell Stone",
-        "",
+        "hell stone",
+        "ideal for a bonfire",
         sprite_add("Resources/sprHellStone.png", 1, false, false, 8, 8),
         ItemType.Material,
         ItemSubType.None,
@@ -54,8 +54,8 @@
     #region Heaven items
       ItemHeavenSoul = ItemCreate(
         undefined,
-        "Heaven Soul",
-        "",
+        "heaven soul",
+        "clean as true",
         sprite_add("Resources/sprHeavenSoul.png", 1, false, false, 8, 8),
         ItemType.Material,
         ItemSubType.None,
@@ -63,8 +63,8 @@
       );
       ItemHeavenStone = ItemCreate(
         undefined,
-        "Heaven Stone",
-        "",
+        "heaven stone",
+        "easy and simple",
         sprite_add("Resources/sprHeavenStone.png", 1, false, false, 8, 8),
         ItemType.Material,
         ItemSubType.None,
@@ -74,8 +74,8 @@
     #region Mythical items
       ItemMythicalBone = ItemCreate(
         undefined,
-        "Mythical Bone",
-        "",
+        "mythical bone",
+        "as mythical as your girlfriend",
         sprite_add("Resources/sprMythicalBone.png", 1, false, false, 8, 8),
         ItemType.Material,
         ItemSubType.None,
@@ -83,8 +83,8 @@
       );
       ItemMythicalSlime = ItemCreate(
         undefined,
-        "Mythical Slime",
-        "",
+        "mythical slime",
+        "cut it with a hot blade",
         sprite_add("Resouces/sprMythicalSlime.png", 1, false, false, 8, 8),
         ItemType.Material,
         ItemSubType.None,
@@ -92,12 +92,21 @@
       );
       ItemMythicalWood = ItemCreate(
         undefined,
-        "Mythical Wood",
-        "",
+        "mythical wood",
+        "your mythical log",
         sprite_add("Resouces/sprMythicalWood.png", 1, false, false, 8, 8),
         ItemType.Material,
         ItemSubType.None,
         5
+      );
+      ItemMythWorldPortal = ItemCreate(
+        undefined,
+        "myth world portal",
+        "way to the unknown...",
+        sprite_add("Resouces/sprMythWorldPortal.png", 1, false, false, 8, 8),
+        ItemType.Material,
+        ItemSubType.None,
+        100
       );
     #endregion
   #endregion
