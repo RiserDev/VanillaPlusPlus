@@ -6,7 +6,7 @@
   // Gear Categories
     globalvar GearAddSword, GearAddExcalibur;               
   
-  //Gear
+  // Gear
     GearAddSword = GearCategoryCreate(undefined, "Additional Swords", true, true);
     GearAddExcalibur = GearCategoryCreate (undefined, "EXCALIBUR", true, true);
   #region Sword
@@ -33,7 +33,8 @@
         Item.Crystal, 20
       ]
     );
-    #region Excalibur
+  #endregion
+  #region Excalibur
       ItemBrokenExcalibur = ItemCreate(
         undefined,
         Localize("broken excalibur"),
@@ -68,7 +69,7 @@
       );
       GearCategoryAddItems(GearAddExcalibur, ItemExcalibur);
     #endregion
-  #endregion
+  
 #define SwordCreate(name, description, spriteFileName, value, recipe, damage)
   var _sprite = sprite_add("Resources/" + spriteFileName, 1, false, false, 0, 0);
   sprite_set_offset(_sprite, sprite_get_width(_sprite) / 2, sprite_get_height(_sprite) / 2);
