@@ -7,7 +7,7 @@
     // Heaven
       globalvar ItemHeavenSoul, ItemHeavenStone;
     // Mythical
-      globalvar ItemMythicalWood, ItemMythicalBone, ItemMythicalSlime;
+      globalvar ItemMythicalWood, ItemMythicalBone, ItemMythicalJelly;
       globalvar ItemMythWorldPortal;
   #endregion
   #region Items 
@@ -81,11 +81,11 @@
         ItemSubType.None,
         20
       );
-      ItemMythicalSlime = ItemCreate(
+      ItemMythicalJelly = ItemCreate(
         undefined,
-        "mythical slime",
+        "mythical Jelly",
         "cut it with a hot blade",
-        sprite_add("Resouces/sprMythicalSlime.png", 1, false, false, 8, 8),
+        sprite_add("Resouces/sprMythicalJelly.png", 1, false, false, 8, 8),
         ItemType.Material,
         ItemSubType.None,
         10

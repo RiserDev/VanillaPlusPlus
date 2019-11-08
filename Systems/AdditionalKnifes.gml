@@ -104,7 +104,7 @@
       100
 
     ); 
-  #endregion
+#endregion
 #define KnifeCreate(name, description, spriteFileName, value, recipe, damage)
   var _sprite = sprite_add("Resources/" + spriteFileName, 1, false, false, 0, 0);
   sprite_set_offset(_sprite, sprite_get_width(_sprite) / 2, sprite_get_height(_sprite) / 2);
