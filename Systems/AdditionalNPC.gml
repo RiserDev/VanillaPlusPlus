@@ -1,6 +1,6 @@
 #define InitAddNPC
   #region VARS
-    globalvar NPCHaron;
+    globalvar NPCHaron, NPCBlacksmith;
   #endregion
 
   #region EXAMPLE
@@ -50,10 +50,7 @@
 
   #region NPC
     #region Haron
-      NPCHaron = NPCCreate(
-        undefined,
-        "Haron"
-      );
+      NPCHaron = NPCCreate(undefined, "haron");
       #region Quests
         NPCQuestCreate(NPCHaron, "PortalQuest");
         //Квест с порталом
@@ -84,5 +81,93 @@
         #define CompleteHaronPortalQuest
           DropItem(x, y, ItemMythWorldPortal, 1);
       #endregion
+    #endregion
+    #region Blacksmith
+      NPCBlacksmith = NPCCreate(undefined, "blacksmith");
+      #region Quests
+        NPCQuestCreate(NPCBlacksmith, "CosmicQuest");
+        NPCQuestCreate(NPCBlacksmith, "IronQuest");
+        NPCQuestCreate(NPCBlacksmith, "ExcaliburQuest");
+        #region CosmicQuest
+          NPCQuestAddState(
+            NPCBlacksmith, 
+            "CosmicQuest",
+            "Give",
+            [//Реплики
+
+            ],
+            "GetCosmic",
+            undefined,
+            undefined
+          );
+          NPCQuestAddState(
+            NPCBlacksmith,
+            "CosmicQuest",
+            "GetCosmic",
+            [//Реплики
+
+            ],
+            undefined,
+            [Item.CosmicSteel, 20],
+            ScriptWrap(CompleteCosmicQuest)
+          );
+        #endregion
+        #region IronQuest
+          NPCQuestAddState(
+            NPCBlacksmith,
+            "IronQuest",
+            "Give",
+            [
+              //Реплики
+            ],
+            "GetIron",
+            undefined,
+            undefined,
+          );
+          NPCQuestAddState(
+            NPCBlacksmith,
+            "IronQuest",
+            "GetIron",
+            [
+              //Реплики
+            ],
+            undefined,
+            [Item.IronIngot, 999],
+            ScriptWrap(CompleteIronQuest)
+          );
+        #endregion
+        #region ExcaliburQuest
+          NPCQuestAddState(
+            NPCBlacksmith,
+            "ExcaliburQuest",
+            "Give",
+            [
+
+            ],
+            "GetExcalibur",
+            undefined,
+            undefined
+          );
+          NPCQuestAddState(
+            NPCBlacksmith,
+            "ExcaliburQuest",
+            "GetExcalibur",
+            [
+
+            ],
+            undefined,
+            [ItemBrokenExcalibur, 1],
+            ScriptWrap(CompleteExcaliburQuest)
+          );
+        #endregion
+      #endregion
+      #region Scripts
+        #define CompleteCosmicQuest
+          DropItem(x, y, ItemDiamond, 20);
+        #define CompleteIronQuest
+          DropItem(x, y, ItemEmerald, 20);
+        #define CompleteExcaliburQuest
+          DropItem(x, y, ItemExcalibur, 1);
+      #endregion 
     #endregion
   #endregion

@@ -1,14 +1,14 @@
 #define InitAddSwords
   // Swords
     globalvar ItemDiamondSword, ItemEmeraldSword;
-    // Excalibur
-      globalvar ItemBrokenExcalibur, ItemExcalibur;
+  // Excalibur
+      globalvar ItemExcalibur;
   // Gear Categories
     globalvar GearAddSword, GearAddExcalibur;               
   
   //Gear
-  GearAddSword = GearCategoryCreate(undefined, "Additional Swords", true, true);
-  GearAddExcalibur = GearCategoryCreate (undefined, "EXCALIBUR", true, true);
+    GearAddSword = GearCategoryCreate(undefined, "Additional Swords", true, true);
+    GearAddExcalibur = GearCategoryCreate (undefined, "EXCALIBUR", true, true);
   #region Sword
     ItemDiamondSword = SwordCreate(
       "diamand sword",
@@ -37,9 +37,9 @@
       ItemBrokenExcalibur = ItemCreate(
         undefined,
         Localize("broken excalibur"),
-        Localize("legendary sword of king arthur"),
-        sprite_add("Resources/sprBrockenExcalibur.png"),
-        ItemType.Gear
+        Localize("you don't know what to do with it"),
+        sprite_add("Resources/sprBrokenExcalibur.png"),
+        ItemType.Material,
         ItemSubType.None,
         10000,
         0,
@@ -66,6 +66,7 @@
         true,
         1000
       );
+      GearCategoryAddItems(GearAddExcalibur, ItemExcalibur);
     #endregion
   #endregion
 #define SwordCreate(name, description, spriteFileName, value, recipe, damage)
