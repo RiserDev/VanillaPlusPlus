@@ -46,7 +46,8 @@
       //   DropItem(x, y, Item.Poop, 1);                            // Что делает скрипт
     #endregion
   #endregion
-  
+  #endregion
+
   #region NPC
     #region Haron
       NPCHaron = NPCCreate(
