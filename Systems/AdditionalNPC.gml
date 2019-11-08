@@ -1,6 +1,6 @@
 #define InitAddNPC
   #region VARS
-    globalvar NPCHaron, NPCBlacksmith;
+    globalvar NPCHaron, NPCBlacksmith, NPCHeavenGuard; 
   #endregion
 
   #region EXAMPLE
@@ -170,4 +170,40 @@
           DropItem(x, y, ItemExcalibur, 1);
       #endregion 
     #endregion
+    #region Heaven Guard
+      NPCHeavenGuard = NPCCreate(undefined, "heaven guard");
+      #region Quests
+        NPCQuestCreate(NPCHeavenGuard, "BrokenExcaliburQuest")
+          NPCQuestAddState(
+            NPCHeavenGuard,
+            "BrokenExcaliburQuest",
+            "Give",
+            [
+              "hello! i have not seen anyone here for a long time.",
+              "generally not important",
+              "could you help me And I will tell you more about this world." 
+            ],
+            "GetBrokenExcalibur",
+            undefined,
+            undefined
+          );
+          NPCQuestAddState(
+            NPCHeavenGuard,
+            "BrokenExcaliburQuest",
+            "GetBrokenExcalibur",
+            [
+              "thank you!",
+              "take this sword I found for your kindness!"
+            ],
+            undefined,
+            [ItemHeavenStone, 30],
+            ScriptWrap(CompleteBrokenExcaliburQuest)            
+          );
+          #region СКРИПТ
+            #define CompleteBrokenExcaliburQuest
+              DropItem(x, y, ItemBrokenExcalibur, 1);
+
+    #endregion
+
   #endregion
+      
